@@ -54,7 +54,7 @@ class EncounterFileRepositoryTest {
                 "then suddenly reversed direction without slowing down. it just reversed.");
         encounter.setOccurrences(1);
 
-        Encounter actual = repository.add(encounter);
+            Encounter actual = repository.add(encounter);
 
         assertNotNull(actual);
         assertEquals(4, actual.getEncounterId());

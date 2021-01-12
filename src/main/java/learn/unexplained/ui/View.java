@@ -106,12 +106,6 @@ public class View {
         return encounter;
     }
 
-    public Encounter deleteById(List<Encounter> encounters) {
-        Encounter encounter = findEncounter(encounters);
-        encounters.remove(encounter);
-        return encounter;
-    }
-
     public Encounter findEncounter(List<Encounter> encounters) {
         if (encounters.size() == 0) {
             return null;
